@@ -45,7 +45,7 @@ Use the link generated from above as link to survey.
 
 ### Common Errors & Warnings
 
-The error below occurs because gradio doesn't have access to paths, In line 153 of `preference_test_code.py` set `allowed_paths` to root path of audio samples.
+The error below occurs because gradio doesn't have access to paths, In line 153 of `preference_test_code.py` add  root path of audio samples to list of `allowed_paths`.
 
 ```bash
 ...
