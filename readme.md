@@ -27,20 +27,30 @@ sample_A: this folder contains **.wav files** generated from experiment/model A
 
 sample_B: this folder contains **.wav files** generated from experiment/model B
 
+#### Creating Test Set
+Choose randomly 15 < X > 20 samples from the test set. For each model/expermient synthesise audios for the transcriptions and save the audios with corresponding original file name. Save the output from each model/experiment in a well-defined folde name e.g for experiment with diacritics save generated samples to `\home\user.name\generated_with_diacritcics` 
+
 !!! 
-- The number of samples in sample_A and sample_B must be equal.
-- Ensure to include a control sample to validate the user's response.
+- The number of samples in sample_A and sample_B must be equal and file basenames should be similar.
+![alt text](image-2.png)![alt text](image-1.png)
+- Ensure to include a control sample to validate the user's response. Something like a ground truth audio (sample a) vs generated audio (sample b), in this case you expect the response to be A is better.
 - The code randomly shuffles the samples so displayed A contains samples from both experiments and vice versa. (Don't think too much about this, just so samples from experiment A are displayed as sample B sometimes to users)
 
 ### Usage With Prolific
 
 Duplicate study `experiment_X` in drafts and edit details for your experiment.
 
+Number of evaluators is set to 10 in `experiment_X`. Can be modified as needed (keep in mind the budget for your experiment)
+
+Language filter is set in `experiment_X` as well to ensure the evaluators speak Arabic.
+
 Use the link generated from above as link to survey.
 
 !!! The number of concurrent users **must be set to 1** to avoid response overwrite issues.
 ![alt text](image.png)
 
+
+**‼️ Make sure to triple check your survey interface before publishing your survey as a published survey cannot be modified and is pre-paid. It should be in a tmux session to avoid gradio link shutdown incase of terminal closure. You do not need a GPU for this. ‼️**
 
 
 ### Common Errors & Warnings
