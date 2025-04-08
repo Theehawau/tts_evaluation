@@ -1,4 +1,4 @@
-# 1. TTS Preference Test Inteface 
+# 1. TTS Preference Test Interface 
 
 ## Overview
 This repository provides code for preference test for speech synthesis experiments.
