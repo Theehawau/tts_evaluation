@@ -115,7 +115,7 @@ def new_sample(choice):
     global index,sample_a,sample_b,out_file
     out = open(out_file, "a")
     time = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-    print(f"{choice}, {sample_a}, {sample_b}, {time}", file=out)
+    print(f"{choice},{sample_a},{sample_b},{time}", file=out)
     out.close()
     return next()
 

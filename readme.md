@@ -35,6 +35,7 @@ Choose randomly 15 < X > 20 samples from the test set. For each model/expermient
 ![alt text](image-2.png)![alt text](image-1.png)
 - Ensure to include a control sample to validate the user's response. Something like a ground truth audio (sample a) vs generated audio (sample b), in this case you expect the response to be A is better.
 - The code randomly shuffles the samples so displayed A contains samples from both experiments and vice versa. (Don't think too much about this, just so samples from experiment A are displayed as sample B sometimes to users)
+- Second-level timestamps for each sample rating is saved as well (this can be used to roughly validate user's response as well)
 
 ### Usage With Prolific
 
