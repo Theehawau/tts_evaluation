@@ -34,14 +34,18 @@ sample_B: this folder contains **wav files** generated from experiment/model B
 
 ### Usage With Prolific
 
+Duplicate study `experiment_X` in drafts and edit details for your experiment.
+
 Use the link generated from above as link to survey.
 
 !!! The number of concurrent users **must be set to 1** to avoid response overwrite issues.
+![alt text](image.png)
+
 
 
 ### Common Errors & Warnings
 
-The error below occurs because gradio doesn't have access to paths, In line 153 of the code set `allowed_paths` to root path of audio samples.
+The error below occurs because gradio doesn't have access to paths, In line 153 of `preference_test_code.py` set `allowed_paths` to root path of audio samples.
 
 ```bash
 ...
