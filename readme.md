@@ -30,7 +30,7 @@ sample_B: this folder contains **wav files** generated from experiment/model B
 !!! 
 - The number of samples in sample_A and sample_B must be equal.
 - Ensure to include a control sample to test the user's response.
-- The code randomly shuffles the samples so displayed A contains samples from both experiments and vice versa. (Don't think too much about this, just so samples from experiment A are displayed as sample B to users)
+- The code randomly shuffles the samples so displayed A contains samples from both experiments and vice versa. (Don't think too much about this, just so samples from experiment A are displayed as sample B sometimes to users)
 
 ### Usage With Prolific
 
