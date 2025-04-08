@@ -23,9 +23,9 @@ python preference_test_code.py \
 
 out_folder: individual preference scores per user will be saved in this folder
 
-sample_A: this folder contains **wav files** generated from experiment/model A
+sample_A: this folder contains **.wav files** generated from experiment/model A
 
-sample_B: this folder contains **wav files** generated from experiment/model B
+sample_B: this folder contains **.wav files** generated from experiment/model B
 
 !!! 
 - The number of samples in sample_A and sample_B must be equal.

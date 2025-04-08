@@ -63,7 +63,9 @@ generated_wo_diacritics.sort()
 
 w_d, wo_d = shuffle_indices(generated_w_diacritics, generated_wo_diacritics, 10)
 
-assert len(w_d) == len(wo_d), "Lengths of the two lists must be equal"
+assert len(w_d) > 0, "Number of samples must be greater than 0."
+
+assert len(w_d) == len(wo_d), "Lengths of samples in the two experiments must be equal"
 
 all_samples = list(zip(w_d, wo_d))
 
